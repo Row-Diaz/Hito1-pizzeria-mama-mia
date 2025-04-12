@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardP";
+
 
 const CardPizza = ({ imageURl, altText, name, price, ingredients }) => {
   return (
