@@ -1,0 +1,37 @@
+.nav{
+    display: flex;
+    
+    height: 45px;
+    background-color: black;
+    color: white;
+    gap: 4px;
+    padding: 5px;
+}
+
+
+.btn-nav button{
+    
+    
+    background-color: black;
+    color: white;
+    border-color: white;
+    width: 60px;
+    height: 30px;
+    gap: 50px;
+
+}  
+
+.amount{
+ 
+    display: flex;
+    width: 75%;
+    justify-content: end;
+        
+    
+}
+
+.amount button{
+    background-color: black;
+    color:rgb(0, 238, 255);
+    border-color:rgb(0, 238, 255) ;
+}
