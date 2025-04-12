@@ -2,6 +2,10 @@ import React from "react";
 import "./Navbar.css";
 
 export default function Navbar() {
+
+  const total = 25000;
+const token = false;
+
   return (
     <div className="nav">
       <p>"Pizzeria Mamma Mia!"</p>
