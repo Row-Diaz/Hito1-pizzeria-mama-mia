@@ -7,15 +7,16 @@ export default function Navbar() {
       <p>"Pizzeria Mamma Mia!"</p>
 
       <div className="btn-nav button">
-      <button>Home</button>
-      <button>Profile</button>
-      <button>Logout</button>
-      <button>Login</button>
-      <button>Register</button>
+      <button>🍕Home</button>
+      <button>🙍‍♂️Profile</button>
+      <button>🔒Logout</button>
+      <button>🔐Login</button>
+      <button>🔑 Register</button>
       </div>
       <div className="amount">
-        <button>Totallllllllllllll</button>
+        <button>🛒Total </button>
       </div>
+      
     </div>
   );
 }
