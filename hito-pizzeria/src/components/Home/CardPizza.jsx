@@ -1,15 +1,15 @@
 import React from "react";
 
 
-const CardPizza = ({ imageURl, altText, name, price, ingredients }) => {
+const CardPizza = ({ imageUrl, altText, name, price, ingredients }) => {
   return (
     <div>
       <div className="item1">
-        <img className="pizza1" src={imageURl} alt={altText} />
+        <img className="pizza1" src={imageUrl} alt={altText} />
 
-        <h1 className="napolitana">{name}</h1>
+        <h2 className="napolitana">{name}</h2>
         <p className="ingredi">{ingredients}</p>
-        <h1 className="precio">{price}</h1>
+        <h2 className="precio">{price}</h2>
       </div>
     </div>
   );
