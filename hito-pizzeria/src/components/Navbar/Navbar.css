@@ -1,5 +1,6 @@
 .navbar {
   display: flex;
+  justify-content:center;
   height: 45px;
   width: 100%;
   background-color: black;
@@ -8,14 +9,11 @@
   padding: 5px;
 }
 
-
 .navbar-cart{
   display: flex;
   flex-direction: row-reverse;
-  justify-content: end;
-   
+  
 }
-
 
 
 .total-btn{
@@ -25,39 +23,10 @@
   color: rgb(0, 242, 255);
 }
 
-
-
-button.navbarBtn{
+.navbarBtn{
   display: flex;
-  background-color: black;
-  height: 40px;
-  gap: 5px;
+  height: 35px;
   
-  
+  gap: 9px;
+
 } 
-
-
-/* .btn-nav button {
-    
-    justify-content: center;
-  background-color: black;
-  color: white;
-  width:auto;
-  height: 30px;
-  gap: 10px;
-} */
-
-/* div.amount{
-    display: flex;
-    justify-content: end;
-    width:68%; 
-} */
-
-/* .amount button {
-  display: flex;
-  justify-content:end;
-  align-items: center;
-  background-color: black;
-  color: rgb(0, 238, 255);
-  border-color: rgb(0, 238, 255);
-} */
