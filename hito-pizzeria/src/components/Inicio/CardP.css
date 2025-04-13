@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+div.cards{
+    padding: 70px;
+    padding-block-start: 30px;
+    border: 4px solid rgba(244, 244, 129, 0.766);
+}
+
 #pizzaNap {
   display: flex;
   width: 400px;
@@ -41,13 +47,7 @@
   height: 100px;
 }
 
-/* .amounts button{
-    display: flex;
-    align-items: center;
-    background-color: aquamarine
-    
-    
-} */
+
 
 .amounts{
     display: flex;

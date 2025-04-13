@@ -4,6 +4,7 @@ import "./CardP.css";
 const CardPizza = ({ imageUrl, name, price, ingredients }) => {
   return (
     <>
+    
       <div id="ppal">
         <img id="pizzaNap" src={imageUrl} />
         <h2>{name}</h2>
@@ -14,12 +15,14 @@ const CardPizza = ({ imageUrl, name, price, ingredients }) => {
       </div>
 
       <div className="amounts">
-         <button className="verMas">Ver mas👀</button>
-         <div>
-        <h2 className="valor">{price}</h2>
+        <button className="verMas">Ver mas👀</button>
+        <div>
+          <h2 className="valor">{price}</h2>
         </div>
-         <button className="anadir">Añadir🛒</button>
+        <button className="anadir">Añadir🛒</button>
       </div>
+
+      
     </>
   );
 };
