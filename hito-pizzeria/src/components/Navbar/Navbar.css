@@ -1,4 +1,4 @@
-.nav {
+.navbar {
   display: flex;
   height: 45px;
   width: 100%;
@@ -8,7 +8,36 @@
   padding: 5px;
 }
 
-.btn-nav button {
+
+.navbar-cart{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+   
+}
+
+
+
+.total-btn{
+  
+  border-color: azure;
+  background-color: black;
+  color: rgb(0, 242, 255);
+}
+
+
+
+button.navbarBtn{
+  display: flex;
+  background-color: black;
+  height: 40px;
+  gap: 5px;
+  
+  
+} 
+
+
+/* .btn-nav button {
     
     justify-content: center;
   background-color: black;
@@ -16,19 +45,19 @@
   width:auto;
   height: 30px;
   gap: 10px;
-}
+} */
 
-div.amount{
+/* div.amount{
     display: flex;
     justify-content: end;
-    width:68%; /*devolver a 77%*/
-}
+    width:68%; 
+} */
 
-.amount button {
+/* .amount button {
   display: flex;
   justify-content:end;
   align-items: center;
   background-color: black;
   color: rgb(0, 238, 255);
   border-color: rgb(0, 238, 255);
-}
+} */
