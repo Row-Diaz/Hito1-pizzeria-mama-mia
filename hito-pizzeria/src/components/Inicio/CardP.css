@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+#pizzaNap{
+    display: flex;
+    width: 400px;
+    border: 2px solid;
+}
+
+#ppal {
+    display: flex;
+    
+   justify-content:space-evenly;
+    flex-direction: column;
+    border: 2px solid;
+    height:60%;
+    /* background-color: blue; */
+}
+
+.cards{
+    display: flex;
+    gap: 15px;
+    
+}
+
+
+.sabores{
+    border: 2px solid;
+   
+    height: 90px;
+}
+
+.amounts{
+    display: flex;
+    justify-content: center;
+    border: 2px solid ;
+    width: 400px;
+    height: 100px;
+   
+    
+}
+
+
+

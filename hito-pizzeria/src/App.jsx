@@ -1,26 +1,39 @@
 import { useState } from "react";
 import Header from "./components/Header/header";
 import Navbar from "./components/Navbar/Navbar";
-import './components/Home/CardPizza'
-
+import CardPizza from "./components/Inicio/CardPizza";
 
 function App() {
   const imageUrl =
-    "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040-ac54-90f6c31eb3e3";
-  const altText = "napolitana";
+    "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_cl.jpg?alt=media&token=6a9a33da-5c00-49d4-9080-784dcc87ec2c";
 
   return (
-    <div>
-      <div>
-        <Navbar />
-        <Header />
-        <CardPizza imageUrl={imageUrl} altText={altText} />
-        <CardPizza name="Pizza Napolitana" />
-        <CardPizza
-          ingredients={["mozzarella,", "tomates,", "jamón,", "orégano"]}/>
-        <CardPizza price="Precio:$5.950" />
+    <>
+      <Navbar />
+      <Header />
+      <br />
+      <div className="cards">
+        <div className="card1">
+          <CardPizza
+            imageUrl={imageUrl}
+            name="Pizza Napolitana"
+            title="Ingredientes"
+            ingredients={["🍕 mozzarella,", "tomates,", "jamón,", "orégano"]}
+            price="Precio:$5.950"
+          />
+        </div>
+
+        <div className="card2">
+          <CardPizza
+            imageUrl={imageUrl}
+            name="Pizza Napolitana"
+            title="Ingredientes"
+            ingredients={["🍕 mozzarella,", "tomates,", "jamón,", "orégano"]}
+            price="Precio:$5.950"
+          />
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

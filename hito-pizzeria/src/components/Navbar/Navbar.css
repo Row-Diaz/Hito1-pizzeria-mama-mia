@@ -22,7 +22,7 @@
 div.amount{
     display: flex;
     justify-content: end;
-    width:70%; /*devolver a 77%*/
+    width:68%; /*devolver a 77%*/
 }
 
 .amount button {
