@@ -38,7 +38,7 @@ function App() {
             imageUrl={imageUrl2}
             name="Pizza Peperoni"
             ingredients={["🍕 mozzarella,", "pepperoni", "orégano"]}
-            price="Precio:$5.950"
+            price="Precio:$6.950"
           />
         </div>
       </div>

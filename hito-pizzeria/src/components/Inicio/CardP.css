@@ -1,52 +1,85 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-
-
-#pizzaNap{
-    display: flex;
-    width: 400px;
-    border: 1px solid;
+#pizzaNap {
+  display: flex;
+  width: 400px;
+  border: 1px solid;
 }
 
 #ppal {
-    display: flex;
-    
-   justify-content:space-evenly;
-    flex-direction: column;
-    border: 1px solid;
-    height:60%;
-    
+  display: flex;
+
+  justify-content: space-evenly;
+  flex-direction: column;
+  border: 1px solid rgb(122, 124, 48);
+  height: 60%;
 }
 
-.cards{
-    display: flex;
-    justify-content: space-around;
-    gap: 10px;
-    
+.cards {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
 
+.sabores p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid;
+  height: 90px;
+}
 
-.sabores p{
+.amounts {
+  display: flex;
+  justify-content: center;
+  border: 1px solid;
+  width: 403px;
+  height: 100px;
+}
+
+/* .amounts button{
     display: flex;
-    justify-content: center;
     align-items: center;
-    border: 1px solid;
-   height: 90px;
-}
+    background-color: aquamarine
+    
+    
+} */
 
 .amounts{
     display: flex;
-    justify-content: center;
-    border: 1px solid ;
-    width: 403px;
-    height: 100px;
+    justify-content:space-around;
+    align-items: center;
+
    
-    
 }
+
+
+
+
+.verMas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 70px;
+}
+
+.anadir{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 70px;
+    background-color: black;
+    color: white;
+}
+
+
+
 
 
 
