@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Header from "./components/Header/header";
 import Navbar from "./components/Navbar/Navbar";
-import CardPizza from "./components/Inicio/CardPizza";
+import CardPizza from "./components/Home/CardPizza";
 import FooterJs from "./components/Footer/FooterJs"
 
 function App() {
