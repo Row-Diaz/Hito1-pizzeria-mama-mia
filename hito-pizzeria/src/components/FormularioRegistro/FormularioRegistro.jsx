@@ -4,7 +4,7 @@ export default function Registro() {
   console.log("Componente Registro montado");
   const [user, setUser] = useState({
     email: "",
-    contraseña: "",
+    contrasena: "",
     confirContrasena: "",
   });
 
@@ -18,6 +18,14 @@ export default function Registro() {
     }));
   };
 
+  const handleSubmit = (e) => { e.preventDefault(); // Previene el comportamiento por defecto del formulario
+
+    if (user.contrasena !== user.confirContrasena) {
+      setMessageError("Las contraseñas no coinciden.");
+      return;
+    }}
+
+    
   return (
     <form onSubmit={handleSubmit}>
       <div>
@@ -30,11 +38,11 @@ export default function Registro() {
         />
       </div>
       <div>
-        <label htmlFor="contraseña">Contraseña</label>
+        <label htmlFor="contrasena">Contraseña</label>
         <input
-          id="contraseña"
+          id="contrasena"
           type="password"
-          value={user.contraseña}
+          value={user.contrasena}
           onChange={handleChange}
         />
       </div>
