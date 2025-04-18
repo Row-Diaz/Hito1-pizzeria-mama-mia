@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import Navbar from "./components/Navbar/Navbar";
 import CardPizza from "./components/Cards/CardPizza";
 import FooterJs from "./components/Footer/FooterJs";
+import FormularioRegistro from "./components/FormularioRegistro/FormularioRegistro";
 
 function App() {
   const imageUrl =
@@ -17,6 +18,7 @@ function App() {
     <>
       <Navbar />
       <Header />
+      <FormularioRegistro />
 
       <br />
       <div className="cards">
