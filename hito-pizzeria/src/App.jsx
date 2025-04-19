@@ -1,10 +1,11 @@
 import { useState } from "react";
-import Header from "./components/Header/Header";
+import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import CardPizza from "./components/Cards/CardPizza";
 import FooterJs from "./components/Footer/FooterJs";
 import FormularioRegistro from "./components/FormularioRegistro/FormularioRegistro";
 import FormularioLogin from "./components/FormularioLogin/FormularioLogin";
+
 
 function App() {
   const imageUrl =
@@ -17,8 +18,9 @@ function App() {
     "https://firebasestorage.googleapis.com/v0/b/apis-varias-mias.appspot.com/o/pizzeria%2Fpizza-1239077_640_com.jpg?alt=media&token=e7cde87a-08d5-4040-ac54-90f6c31eb3e3";
   return (
     <>
+
       <Navbar />
-      <Header />
+      {/* <Home /> */}
       {/* <FormularioRegistro /> */}
       <FormularioLogin />
 
