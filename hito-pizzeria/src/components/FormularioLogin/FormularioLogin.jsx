@@ -32,6 +32,11 @@ export default function FormularioLogin() {
       return;
     }
 
+    if (user.contrasena.length < 6) {
+        setMessageError("La contraseña debe tener al menos 6 caracteres");
+        return;
+      }
+
     // Aquí puedes manejar el inicio de sesión, por ejemplo, enviando los datos a una API
 
     // Limpiar el formulario si todo es correcto
@@ -43,8 +48,8 @@ export default function FormularioLogin() {
   };
 
   return (
-    <div className='formulario-login'>
-      <form onSubmit={handleSubmit}>
+    <div >
+      <form className='formulario-login' onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
           </div>
@@ -70,10 +75,11 @@ export default function FormularioLogin() {
         </div>
 
         <div className='login1-btn'>
-          <button type="submit">Iniciar Sesión</button>
+          <button className="inicio-sesion" type="submit">Iniciar Sesión</button>
         </div>
-
+        <div className='error-login'>
         {messageError && <p style={{ color: 'red' }}>{messageError}</p>}
+        </div>
       </form>
     </div>
   );
