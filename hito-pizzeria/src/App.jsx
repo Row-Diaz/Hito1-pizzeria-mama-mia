@@ -20,9 +20,9 @@ function App() {
     <>
 
       <Navbar />
-      {/* <Home /> */}
-      {/* <FormularioRegistro /> */}
-      <FormularioLogin />
+      <Home />
+      <FormularioRegistro />
+      {/* <FormularioLogin /> */}
 
       <br />
       <div className="cards">

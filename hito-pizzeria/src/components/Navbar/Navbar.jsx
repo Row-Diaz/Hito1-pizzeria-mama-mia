@@ -14,6 +14,7 @@ const Navbar = () => {
   };
 
   return (
+    <>
     <nav className="navbar">
       <div className="navbar-brand">
         <h1>Pizeria Mamma Mia!</h1>
@@ -37,6 +38,7 @@ const Navbar = () => {
         )}
       </div>
     </nav>
+    </>
   );
 };
 
