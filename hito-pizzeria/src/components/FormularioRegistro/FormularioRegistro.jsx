@@ -22,6 +22,11 @@ export default function Registro() {
   const handleSubmit = (e) => {
     e.preventDefault(); // Previene el comportamiento por defecto del formulario
 
+    if (!user.email || !user.contrasena || !user.confirContrasena) {
+      setMessageError("Todos los campos son obligatorios");
+      return;
+    }
+
     // Validación del email
     if (!user.email) {
       setMessageError("El campo email es obligatorio");
