@@ -56,6 +56,7 @@ export default function Registro() {
 
   return (
     <div >
+      <h1>Registro</h1>
       <form className="formulario" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>

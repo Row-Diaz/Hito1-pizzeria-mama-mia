@@ -49,6 +49,7 @@ export default function FormularioLogin() {
 
   return (
     <div >
+      <h1>Login</h1>
       <form className='formulario-login' onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
@@ -75,7 +76,7 @@ export default function FormularioLogin() {
         </div>
 
         <div className='login1-btn'>
-          <button className="inicio-sesion" type="submit">Iniciar Sesión</button>
+          <button className="inicio-sesion" type="submit">Loging</button>
         </div>
         <div className='error-login'>
         {messageError && <p style={{ color: 'red' }}>{messageError}</p>}

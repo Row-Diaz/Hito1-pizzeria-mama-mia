@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: aqua;
+    
     height: 180px;
     padding: 3px;
     
@@ -22,6 +22,8 @@
     display: flex;
    justify-content: center;
     align-items: center;
+    background-color: rgb(6, 65, 202);
+    color: white;
     border: 1px solid black;
     border-radius: 3px;
     width: 100px;
