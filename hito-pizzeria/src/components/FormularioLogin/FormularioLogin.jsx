@@ -1,12 +1,10 @@
-import React, { useState } from "react";
-import "./FormularioRegistro.css";
+import React, { useState } from 'react';
+import "./FormularioLogin.css";
 
-export default function Registro() {
-  console.log("Componente Registro montado");
+export default function FormularioLogin() {
   const [user, setUser] = useState({
     email: "",
     contrasena: "",
-    confirContrasena: "",
   });
 
   const [messageError, setMessageError] = useState("");
@@ -22,45 +20,35 @@ export default function Registro() {
   const handleSubmit = (e) => {
     e.preventDefault(); // Previene el comportamiento por defecto del formulario
 
-    if (!user.email || !user.contrasena || !user.confirContrasena) {
+    // Validación de campos vacíos
+    if (!user.email || !user.contrasena) {
       setMessageError("Todos los campos son obligatorios");
       return;
     }
 
     // Validación del email
-    if (!user.email) {
-      setMessageError("El campo email es obligatorio");
-      return;
-    }
-
-    // Corrige la expresión regular para validar el correo
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(user.email)) {
       setMessageError("El correo no es válido");
       return;
     }
 
-    // Validación de contraseñas
-    if (user.contrasena !== user.confirContrasena) {
-      setMessageError("Las contraseñas no coinciden.");
-      return;
-    }
+    // Aquí puedes manejar el inicio de sesión, por ejemplo, enviando los datos a una API
 
     // Limpiar el formulario si todo es correcto
     setUser({
       email: "",
       contrasena: "",
-      confirContrasena: "",
     });
     setMessageError(""); // Limpiar el mensaje de error
   };
 
   return (
-    <div className="formulario">
+    <div className='formulario-login'>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email</label>
-        </div>
-        <div>
+          </div>
+          <div>
           <input
             id="email"
             type="text"
@@ -71,8 +59,8 @@ export default function Registro() {
 
         <div>
           <label htmlFor="contrasena">Contraseña</label>
-        </div>
-        <div>
+          </div>
+          <div>
           <input
             id="contrasena"
             type="password"
@@ -80,23 +68,11 @@ export default function Registro() {
             onChange={handleChange}
           />
         </div>
-        <div>
-          <label htmlFor="confirContrasena">Confirmar Contraseña</label>
+
+        <div className='login1-btn'>
+          <button type="submit">Iniciar Sesión</button>
         </div>
-        <div>
-          <input
-            id="confirContrasena"
-            type="password"
-            value={user.confirContrasena}
-            onChange={handleChange}
-          />
-        </div>
-        <div className="container-btn">
-          <button className="register" type="submit">
-            Registrar
-          </button>
-        </div>
-        
+
         {messageError && <p style={{ color: 'red' }}>{messageError}</p>}
       </form>
     </div>

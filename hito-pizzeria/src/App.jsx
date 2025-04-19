@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar";
 import CardPizza from "./components/Cards/CardPizza";
 import FooterJs from "./components/Footer/FooterJs";
 import FormularioRegistro from "./components/FormularioRegistro/FormularioRegistro";
+import FormularioLogin from "./components/FormularioLogin/FormularioLogin";
 
 function App() {
   const imageUrl =
@@ -17,8 +18,9 @@ function App() {
   return (
     <>
       <Navbar />
-      <Header />
-      <FormularioRegistro />
+      {/* <Header /> */}
+      {/* <FormularioRegistro /> */}
+      <FormularioLogin />
 
       <br />
       <div className="cards">

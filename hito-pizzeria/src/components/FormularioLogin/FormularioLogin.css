@@ -1,0 +1,17 @@
+.formulario-login{
+
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    background-color: aqua;
+    height: 130px;
+    padding: 3px;
+    
+}
+.login1-btn{
+
+    display: flex;
+    justify-content: center;
+    padding-top: 6px;
+}
