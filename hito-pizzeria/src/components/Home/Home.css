@@ -1,11 +1,8 @@
 .frontal{
     display: flex;
-    
-    
-    
-    
-
-    background-color: aqua;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 
