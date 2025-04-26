@@ -20,6 +20,7 @@ export default function Home() {
             ingredients={item.ingredients}
             name={item.name}
             price={item.price}
+            desc={item.desc}
           />
         ))}
       </div>

@@ -96,3 +96,11 @@
   background-color: black;
   color: white;
 }
+
+.description{
+  display: flex;
+  padding-top: 5px;
+  
+  text-align: center;
+  
+}

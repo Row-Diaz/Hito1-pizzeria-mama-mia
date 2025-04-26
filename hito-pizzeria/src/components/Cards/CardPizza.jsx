@@ -1,7 +1,7 @@
 import React from "react";
 import "./CardP.css";
 
-const CardPizza = ({ name, price, ingredients, img }) => {
+const CardPizza = ({ name, price, ingredients, img, desc }) => {
   return (
     <div className="ppal">
       <div className="container">
@@ -17,8 +17,9 @@ const CardPizza = ({ name, price, ingredients, img }) => {
             <div className="card-title">
               <p>INGREDIENTES</p>
             </div>
-            <div  className="saboresMap">
-            🍕{ingredients.map((item, index) => (
+            <div className="saboresMap">
+              🍕
+              {ingredients.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}
             </div>
@@ -39,6 +40,7 @@ const CardPizza = ({ name, price, ingredients, img }) => {
               </div>
             </div>
           </div>
+          <div className="description">{desc}</div>
         </card>
       </div>
     </div>
