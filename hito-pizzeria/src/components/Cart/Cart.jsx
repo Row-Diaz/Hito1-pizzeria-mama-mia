@@ -32,9 +32,7 @@ export default function Cart() {
       ) : (
         <ul className="list-group">
           {cart.map((pizza) => (
-            <li
-              key={pizza.id}
-              className="list-group-item">
+            <li key={pizza.id} className="list-group-item">
               <div>
                 <img
                   src={pizza.img}
