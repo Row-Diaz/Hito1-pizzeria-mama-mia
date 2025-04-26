@@ -45,7 +45,7 @@ export default function Cart() {
                 <p>Precio unitario: ${pizza.price}</p>
                 <p>Cantidad: {pizza.count}</p>
               </div>
-              <div>
+              <div className="add-less">
                 <button
                   className="btn btn-danger"
                   onClick={() => handleDecrease(pizza.id)}>
