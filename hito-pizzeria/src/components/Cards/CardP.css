@@ -32,19 +32,19 @@
   gap: 15px;
 }
 
-.sabores {
+.sabores  {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: 25rem;
   border: 1px solid;
   height: 100px;
+  gap: 15px;
     
 }
 
-.sabores li{
-  
-    list-style: none;
-    
-}
+
 
 /* .amounts {
   display: flex;
