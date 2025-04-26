@@ -1,17 +1,24 @@
 import React from "react";
 import "./CardP.css";
 
-const CardPizza = ({ imageUrl, name, price, ingredients }) => {
+const CardPizza = ({ name, price, ingredients, img }) => {
   return (
-    <>
-    
-      <div id="ppal">
-        <img id="pizzaNap" src={imageUrl} />
-        <h2>{name}</h2>
+    <div className="container">
+      <card className="card-model">
+        <div className="pizza-img">
+          <img id="pizzaNap" src={img} />
+          <h2>{name}</h2>
       </div>
 
       <div className="sabores">
-        <p> {ingredients}</p>
+        <div className="ingre-items">
+        <p>🍕INGREDIENTES</p>
+        <p> {ingredients }
+          {/* {ingredients.map((item , index) => (
+            <li key={index} >{item}</li>
+          ))} */}
+        </p>
+        </div>
       </div>
 
       <div className="amounts">
@@ -22,8 +29,8 @@ const CardPizza = ({ imageUrl, name, price, ingredients }) => {
         <button className="anadir">Añadir🛒</button>
       </div>
 
-      
-    </>
+      </card>
+    </div>
   );
 };
 
