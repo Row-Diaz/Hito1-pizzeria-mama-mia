@@ -12,14 +12,14 @@ export default function Home() {
       <div id="prueba">
         <h1>Ingredientes:</h1>
 
-        {pizzas.map((p) => (
+        {pizzas.map((item) => (
           <CardPizza
-            key={p.id}
-            desc={p.desc}
-            img={p.img}
-            ingredients={p.ingredients}
-            name={p.name}
-            price={p.price}
+            key={item.id}
+            desc={item.desc}
+            img={item.img}
+            ingredients={item.ingredients}
+            name={item.name}
+            price={item.price}
           />
         ))}
       </div>
