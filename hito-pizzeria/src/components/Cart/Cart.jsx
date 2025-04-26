@@ -25,7 +25,7 @@ export default function Cart() {
   const total = cart.reduce((acc, pizza) => acc + pizza.price * pizza.count, 0);
 
   return (
-    <div className="container mt-5">
+    <div className="container">
       <h2>Detalles del pedido : </h2>
       {cart.length === 0 ? (
         <p>El carrito está vacío</p>
@@ -34,7 +34,7 @@ export default function Cart() {
           {cart.map((pizza) => (
             <li
               key={pizza.id}
-              className="list-group-item d-flex justify-content-between align-items-center">
+              className="list-group-item">
               <div>
                 <img
                   src={pizza.img}
@@ -47,12 +47,12 @@ export default function Cart() {
               </div>
               <div>
                 <button
-                  className="btn btn-danger btn-sm me-2"
+                  className="btn btn-danger"
                   onClick={() => handleDecrease(pizza.id)}>
                   -
                 </button>
                 <button
-                  className="btn btn-success btn-sm me-2"
+                  className="btn btn-success"
                   onClick={() => handleIncrease(pizza.id)}>
                   +
                 </button>
