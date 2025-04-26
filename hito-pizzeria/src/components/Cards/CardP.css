@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-/* .ppal{
-  display: flex;
-  
-  justify-content:space-evenly
-} */
-
 .card-model {
   display: flex;
   align-items: center;
@@ -29,15 +23,13 @@
   justify-content: center;
   width: 399px;
   border: 1px solid;
-  /* border-radius: 8px; */
-  border-top-left-radius: 8px;
+   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
 
 .pizza-img {
   width: 400px;
   border: 1px solid rgb(122, 124, 48);
-  /* height: 0%; */
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   
@@ -101,6 +93,6 @@
   display: flex;
   padding-top: 10px;
   text-align: center;
-  background-color: aqua;
+  /* background-color: aqua; */
   
 }
