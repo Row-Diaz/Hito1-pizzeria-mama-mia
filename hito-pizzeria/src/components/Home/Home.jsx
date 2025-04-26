@@ -1,16 +1,17 @@
 import React from "react";
 import Header from "../Header/Header";
 import CardPizza from "../Cards/CardPizza";
+import "./Home.css";
 import { pizzas } from "../Pizzas/pizzas";
 
 export default function Home() {
   
   return (
-    <div>
+    <>
       <Header />
-      <div id="prueba">
+     
         <h1>Ingredientes:</h1>
-
+        <div className="frontal">
         {pizzas.map((item) => (
           <CardPizza
             key={item.id}
@@ -25,6 +26,6 @@ export default function Home() {
 
       
 
-    </div>
+    </>
   );
 }
