@@ -1,6 +1,6 @@
 .navbar {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   height: 45px;
   width: 100%;
   background-color: black;
@@ -9,24 +9,88 @@
   padding: 5px;
 }
 
-.navbar-cart{
+.navbar-cart {
   display: flex;
   flex-direction: row-reverse;
-  
 }
 
-
-.total-btn{
-  
+.total-btn {
   border-color: azure;
   background-color: black;
   color: rgb(0, 242, 255);
 }
 
-.navbarBtn{
+.navbarBtn {
   display: flex;
-  height: 35px;
-  
-  gap: 9px;
+  justify-content: center;
+  align-items: center;
+  height: 37px;
+  gap: 20px;
+  padding: 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
 
-} 
+.home-btn {
+  display: flex;
+  align-items: center;
+  background-color: #28a745;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 35px;
+}
+
+.home-btn:hover {
+  background-color: #218838;
+}
+
+.contact-btn {
+  display: flex;
+  align-items: center;
+  background-color: #28a745;
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  height: 35px;
+}
+
+.contact-btn:hover {
+  background-color: #218838;
+}
+
+.login-btn,
+.register-btn,
+.profile-btn,
+.logout-btn {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.register-btn:hover {
+  background-color: #218838;
+}
+
+.login-btn:hover {
+  background-color: #218838;
+}
+
+.profile-btn:hover {
+  background-color: #218838;
+}
+
+.logout-btn:hover {
+  background-color: #218838;
+}

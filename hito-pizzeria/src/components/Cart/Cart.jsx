@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { pizzaCart } from "../Pizzas/pizzas";
+import "./Cart.css";
 
 export default function Cart() {
   const [cart, setCart] = useState(pizzaCart);

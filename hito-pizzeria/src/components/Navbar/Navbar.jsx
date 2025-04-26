@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const total = 2500;
-  const token = false;
+  const token = true;
 
   // Función para formatear el total
   const formatCurrency = (amount) => {
@@ -20,8 +20,8 @@ const Navbar = () => {
         <h1>Pizeria Mamma Mia!</h1>
       </div>
       <div className="navbarBtn">
-        <button>Home</button>
-        <button>Contacto</button>
+        <button className="home-btn">Home</button>
+        <button className="contact-btn">Contacto</button>
       </div>
       <div className="navbar-cart">
         <button className="total-btn">🛒 Total: {formatCurrency(total)}</button>
