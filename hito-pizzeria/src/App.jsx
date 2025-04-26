@@ -2,8 +2,10 @@ import { useState } from "react";
 import Home from "./components/Home/Home";
 import Navbar from "./components/Navbar/Navbar";
 import FooterJs from "./components/Footer/FooterJs";
+import Cart from "./components/Cart/Cart";
 //import FormularioRegistro from "./components/FormularioRegistro/FormularioRegistro";
 // import FormularioLogin from "./components/FormularioLogin/FormularioLogin";
+
 
 function App() {
   return (
@@ -11,7 +13,8 @@ function App() {
       <Navbar />
       {/* <FormularioRegistro /> */}
       {/* <FormularioLogin /> */}
-      <Home />
+      {/* <Home /> */}
+      <Cart />
 
       <FooterJs />
     </>
