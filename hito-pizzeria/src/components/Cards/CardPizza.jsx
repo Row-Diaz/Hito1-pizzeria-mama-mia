@@ -40,7 +40,9 @@ const CardPizza = ({ name, price, ingredients, img, desc }) => {
               </div>
             </div>
           </div>
-          <div className="description">{desc}</div>
+
+          {/* Descomentar el <div></div> a continuacion para renderizar la informacion, esteticamente no se bien */}
+          {/* <div className="description">{desc}</div>  */}
         </card>
       </div>
     </div>
