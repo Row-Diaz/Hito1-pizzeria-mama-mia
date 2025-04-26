@@ -10,17 +10,23 @@ const CardPizza = ({ name, price, ingredients, img }) => {
           <title>{name}</title>
         </div>
 
-        <div className="sabores">
-          <div className="ingre-items">
+        <div className="sabores" style={{ listStyleType: "none", padding: 0 }}>
+          <div className="card-title">
             <p>INGREDIENTES</p>
           </div>
-          <div>
+          <div className="saboresMap">
+          {ingredients.map((item, index) => (
+            <li key={index}>{item}</li>
+          ))}
+          </div>
+        </div>
+
+        {/* <div>
             <p>
               🍕
               {ingredients}
             </p>
-          </div>
-        </div>
+          </div> */}
 
         <div className="amounts">
           <h2 className="valor">

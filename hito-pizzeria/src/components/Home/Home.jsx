@@ -1,7 +1,6 @@
 import React from "react";
 import Header from "../Header/Header";
 import CardPizza from "../Cards/CardPizza";
-// import Pizzas from "../Pizzas/Pizzas";
 import { pizzas } from "../Pizzas/pizzas";
 
 export default function Home() {

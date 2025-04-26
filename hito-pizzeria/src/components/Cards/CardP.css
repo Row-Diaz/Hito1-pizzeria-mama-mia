@@ -23,24 +23,24 @@
   /* flex-direction: column; */
   width: 25rem;
   border: 1px solid rgb(122, 124, 48);
-  height: 60%;
+  height: 0%;
 }
 
-.ingre-items {
-  display: flex;
-  /* justify-content: space-around; */
-  gap: 15px;
-}
 
 .sabores {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
   width: 25rem;
   border: 1px solid;
   height: 100px;
-  gap: 15px;
+  background-color: aqua;
+  font-size:large;
+}
+
+.saboresMap{
+  display: flex;
 }
 
 .amounts {
