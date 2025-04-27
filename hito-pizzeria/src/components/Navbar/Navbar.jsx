@@ -3,7 +3,7 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const total = 2500;
-  const token = true;
+  const token = false;
 
   // Función para formatear el total
   const formatCurrency = (amount) => {
