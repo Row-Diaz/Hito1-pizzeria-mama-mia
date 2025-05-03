@@ -1,7 +1,31 @@
-.frontal{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
+.frontal {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
+.pizzaMap {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.description {
+  display: flex;
+  padding-top: 0px;
+  text-align: center;
+}
+
+.card-model {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 70px;
+  padding-block-start: 30px;
+  border: 2px solid rgba(244, 244, 129, 0.766);
+  border-radius: 8px;
+  width: 27rem;
+  height: 615px;
+}

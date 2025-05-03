@@ -1,6 +1,7 @@
 import React from "react";
 import "./CardP.css";
 
+//ORIGINAL
 const CardPizza = ({ name, price, ingredients, img, desc }) => {
   return (
     <div className="ppal">
