@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const total = 2500;
-  const token = false;
+  const token = true;
 
   // Función para formatear el total
   const formatCurrency = (amount) => {

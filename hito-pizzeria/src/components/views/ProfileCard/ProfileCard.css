@@ -1,0 +1,20 @@
+.user-profile{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(199, 232, 232);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    gap: 10px;
+    border: 2px solid black;
+}
+
+.user-profile-btn{
+    width: 100px ;
+    margin: 0 auto;
+    height: 30px;
+    text-align: center;
+    
+    border-radius: 5px;
+}
