@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from "react";
-import Header from "../Header/Header";
-import CardPizza from "../Cards/CardPizza";
+import Header from "../../Header/Header";
+import CardPizza from "../../Cards/CardPizza";
 import "./Home.css";
 // import { pizzas } from "../Pizzas/pizzas";
-import Pizza from "../Pizzas/Pizza";
+import Pizza from "../Pizza";
+
 
 export default function Home() {
   const [pizzas, setPizza] = useState([]);
@@ -26,6 +27,7 @@ export default function Home() {
   return (
     <>
       <Header />
+      
 
       <div className="pizzaMap">
         {pizzas.map((pizza, index) => (

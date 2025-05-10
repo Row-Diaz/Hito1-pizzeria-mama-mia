@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { pizzaCart } from "../Pizzas/pizzas";
+import { pizzaCart } from "../../Pizzas/pizzas";
 import "./Cart.css";
 
 export default function Cart() {
