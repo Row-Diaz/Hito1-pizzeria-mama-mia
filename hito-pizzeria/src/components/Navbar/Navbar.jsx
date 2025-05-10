@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const total = 2500;
-  const token = false; // cambiar el valor a "true" para la renderización de los botones login y register y comprobar su funcionamiento
+  const token = true; // cambiar el valor a "true" para la renderización de los botones login y register y comprobar su funcionamiento
 
   // Función para formatear el total
   const formatCurrency = (amount) => {
